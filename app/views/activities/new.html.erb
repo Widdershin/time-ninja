@@ -1,0 +1,9 @@
+<h1>Create new Activity</h1>
+
+<%= simple_form_for @activity, url: {action: :create} do |f| %>
+  <%= f.input :name %>
+  <%= f.input :minimum_duration %>
+  <%= f.input :maximum_duration %>
+  <%= f.input :desired_amount %>
+  <%= f.button :submit %>
+<% end %>

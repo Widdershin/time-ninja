@@ -15,7 +15,10 @@ ActiveRecord::Schema.define(version: 20150215002423) do
 
   create_table "activities", force: true do |t|
     t.string   "name"
-    t.integer  "duration"
+    t.integer  "minimum_duration"
+    t.integer  "maximum_duration"
+    t.integer  "desired_amount"
+    t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
