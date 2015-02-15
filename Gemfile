@@ -31,6 +31,14 @@ gem 'rspec-rails'
 gem 'devise'
 
 gem 'simple_form'
+
+gem "spring-commands-rspec", group: :development
+
+gem 'fullcalendar-rails'
+gem 'momentjs-rails'
+group :test do
+  gem 'timecop'
+end
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
