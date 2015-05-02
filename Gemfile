@@ -32,7 +32,13 @@ gem 'devise'
 
 gem 'simple_form'
 
+gem 'ri_cal'
+
 gem "spring-commands-rspec", group: :development
+group :development, :test do
+  gem "pry"
+  gem "pry-byebug"
+end
 
 gem 'fullcalendar-rails'
 gem 'momentjs-rails'

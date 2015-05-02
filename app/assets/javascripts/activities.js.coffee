@@ -11,7 +11,7 @@ $(document).ready ->
 
   getEvents = ->
     $.getJSON(
-      '/occurences',
+      '/occurrences',
       updateCalendar,
     )
 
